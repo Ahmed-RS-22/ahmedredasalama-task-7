@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="page" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="60">
+  <!--side  links -->
+  <aside class="contact-us">
+    <ul class="list-unstyled ">
+      <li><a href="#footer"><i class="fa-solid fa-square-phone-flip first" title="CONTACT US"></i></a></li>
+      <li><a href="#c"><i class="fa-brands fa-facebook-f" title="facebook"></i></a></li>
+      <li><a href="#c"><i class="fa-brands fa-twitter" title="twitter"></i></a></li>
+      <li><a href="#c"><i class="fa-brands fa-linkedin-in" title="linkedin"></i></a></li>
+      <li><a href="#c"><i class="fa-brands fa-instagram" title="instagram"></i></a></li>
+    </ul>
+  </aside>
+  <!-- end links  -->
+  <!-- start navbar  -->
+  <nav class="navbar navbar-expand-md bg-dark fixed-top navbar-default">
+    <div class="container-fluid ">
+      <!-- logo -->
+        <img src="./images/logo.jpg" alt="img" class="img-fluid">
+        <a class="navbar-brand text-light mx-lg-3 px-2 glow mx-0" href="#page">Animals hub</a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-info"></i>
+        </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <!-- head links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item  ">
+            <a class="nav-link active px-lg-4" aria-current="page" href="#carouselExampleCaptions">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-4" href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  px-lg-4 " href="#service">service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  px-lg-4" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  px-lg-4" href="#news">News</a>
+          </li>
+        </ul>
+        <!-- buttons login search  -->
+        <form class="d-flex " role="search">
+          <input class="form-control me-2 bg-info text-light" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info mx-1" type="submit">Search</button>
+          <button class="btn btn-outline-info mx-1 glow" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header  bg-info">
+          <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label text-info">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label text-info">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3  form-switch ">
+                  <input type="checkbox" class="form-check-input bg-info" id="exampleCheck1" role="switch" checked>
+                  <label class="form-check-label ms-2 text-info" for="exampleCheck1">Check me out</label>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer d-flex  justify-content-between">
+            <button type="submit" class="btn btn-info text-light">Login</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- end navbar -->
+    <!-- start carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <!-- bullets -->
+      <ul class="carousel-indicators list-unstyled">
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></li>
+      </ul>
+      <div class="carousel-inner">
+        <!-- item -1 -->
+        <div class="carousel-item active">
+          <img src="./images/c1.jpg" class="w-100 img-fluid " alt="img"  >
+          <div class="carousel-caption text-center mb-md-5 pt-md-4 ">
+            <h5>The Monkey</h5>
+            <p>Many monkey species are tree-dwelling</p>
+            <p><a class="btn text-white btn-info " href="#">Learn more</a></p>
+          </div>
+        </div>
+         <!-- item -2 -->
+        <div class="carousel-item">
+          <img src="./images/c2.jpg" class=" w-100" alt="img"  >
+          <div class="carousel-caption text-center mb-md-5 pt-md-4 ">
+            <h5>The Elephant</h5>
+            <p>they stay near water when it is accessible.</p>
+            <p><a class="btn text-white btn-info" href="#">Learn more</a></p>
+          </div>
+        </div>
+         <!-- item -3 -->
+        <div class="carousel-item">
+          <img src="./images/c3.jpg" class=" w-100" alt="img"  >
+          <div class="carousel-caption text-center mb-md-5 pt-md-4   ">
+            <h5>The Lion</h5>
+            <p>a large cat of the genus Panthera native to Africa and India.</p>
+            <p><a class="btn text-white btn-info" href="#">Learn more</a></p>
+          </div>
+        </div>
+         <!-- item -4 -->
+        <div class="carousel-item">
+          <img src="./images/c4.jpg" class=" w-100" alt="img"  >
+          <div class="carousel-caption text-center mb-md-5 pt-md-4   ">
+            <h5>The Turtle</h5>
+            <p>hasa special shell developed mainly from their ribs.</p>
+            <p><a class="btn text-white btn-info" href="#">Learn more</a></p>
+          </div>
+        </div>
+         <!-- item -5 -->
+        <div class="carousel-item">
+          <img src="./images/c5.jpg" class=" w-100" alt="img"  >
+          <div class="carousel-caption text-center mb-md-5 pt-md-4   ">
+            <h5>The Cheetah</h5>
+            <p>The fastest animal on the land.</p>
+            <p><a class="btn text-white btn-info" href="#">Learn more</a></p>
+          </div>
+        </div>
+         <!-- item -6 -->
+        <div class="carousel-item">
+          <img src="./images/c6.jpg" class=" w-100" alt="img"  >
+          <div class="carousel-caption text-center mb-md-5 pt-md-4  ">
+            <h5>The Wolf</h5>
+            <p>a large canine native to Eurasia and North America.</p>
+            <p><a class="btn text-white btn-info" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+    <!-- end carousel -->
+    <!-- start about section -->
+    <section class="about" id="about">
+      <!-- jumbtron -->
+      <div class="px-4 jumbotron text-start">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold text-info glow">WELCOME !!</h1>
+          <p class="col-md-8 fs-5 text-light">NOW IS THE TIME TO ACT FOR WILDLIFE. CONSERVATION IS CRITICAL; SPECIES ARE UNDER THREAT. TOGETHER WE CAN MAKE A BIG DIFFERENCE. TAKE ACTION TODAY AND JOIN US IN PREVENTING EXTINCTION.</p>
+          <button class="btn btn-info btn-lg text-light" type="button">ACT FOR WILDLIFE</button>
+        </div>
+      </div>
+      <!-- accordion -->
+      <div class="accordion py-2" id="accordionPanelsStayOpenExample">
+         <!-- item -1 -->
+        <div class="accordion-item bg-info">
+          <h2 class="accordion-header  ">
+            <button class="accordion-button text-light bg-info border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              <p class="fs-5 fw-bold"> Animals species </p>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body collapsed text-light">
+              As of 2022, 2.16 million living animal species have been described—of which around 1.05 million are insects, over 85,000 are molluscs, and around 65,000 are vertebrates. It has been estimated there are around 7.77 million animal species. Animals range in length from 8.5 micrometres (0.00033 in) to 33.6 metres (110 ft). They have complex interactions with each other and their environments, forming intricate food webs. The scientific study of animals is known as zoology.
+            </div>
+          </div>
+        </div>
+         <!-- item -2 -->
+        <div class="accordion-item bg-info">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed text-light bg-info border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              <p class="fs-5 fw-bold"> Animals structure</p>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body text-light">
+              All animals are composed of cells, surrounded by a characteristic extracellular matrix composed of collagen and elastic glycoproteins. During development, the animal extracellular matrix forms a relatively flexible framework upon which cells can move about and be reorganised, making the formation of complex structures possible. This may be calcified, forming structures such as shells, bones, and spicules.In contrast, the cells of other multicellular organisms (primarily algae, plants, and fungi) are held in place by cell walls, and so develop by progressive growth. Animal cells uniquely possess the cell junctions called tight junctions, gap junctions, and desmosomes.
+            </div>
+          </div>
+        </div>
+         <!-- item -3 -->
+        <div class="accordion-item bg-info">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed text-light bg-info border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <p class="fs-5 fw-bold"> Reproduction and development </p>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body text-light">
+              Nearly all animals make use of some form of sexual reproduction . They produce haploid gametes by meiosis; the smaller, motile gametes are spermatozoa and the larger, non-motile gametes are ova.These fuse to form zygotes,which develop via mitosis into a hollow sphere, called a blastula. In sponges, blastula larvae swim to a new location, attach to the seabed, and develop into a new sponge.In most other groups, the blastula undergoes more complicated rearrangement. It first invaginates to form a gastrula with a digestive chamber and two separate germ layers, an external ectoderm and an internal endoderm. In most cases, a third germ layer, the mesoderm, also develops between them.These germ layers then differentiate to form tissues and organs.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- blog -->
+      <div class="blog container-lg mt-md-3 img-fluid">
+        <div class="p-4 p-md-5 mb-4 text-light blog-cover">
+          <div class="col-md-6 px-0 text-center text-info">
+            <h1 class="display-4 fst-italic fw-bold">Walk on the wild side...</h1>
+            <p class="lead my-3 my-md-5">Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, have myocytes and are able to move, and grow from a hollow sphere of cells... </p>
+            <p class="lead mb-0 mt-md-5"><a href="#" class="text-light fw-bold">Continue reading...</a></p>
+          </div>
+        </div>
+        <!-- cards -->
+        <div class="row mb-2 cards">
+          <!-- card-1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static text-light bg-info">
+                <h3 class="mb-0">Monkey</h3>
+                <p class="mb-auto">Available  at : </p>
+                <div class="mb-1 ">Nov 11</div>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="col-auto d-lg-block card-img">
+                <img src="./images/c1.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div> 
+          <!-- card-2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static text-light bg-info">
+                <h3 class="mb-0">Elephant</h3>
+                <p class="mb-auto">Available  at : </p>
+                <div class="mb-1 ">Dec 11</div>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="col-auto d-lg-block card-img">
+                <img src="./images/c2.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div> 
+          <!-- card-3 -->
+          <div class="col-md-6 col-lg-4 ">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static text-light bg-info">
+                <h3 class="mb-0">Cheetah</h3>
+                <p class="mb-auto">Available  at : </p>
+                <div class="mb-1 ">May 29</div>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="col-auto d-lg-block card-img">
+                <img src="./images/c5.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div> 
+          <!-- card-4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static text-light bg-info">
+                <h3 class="mb-0">Lion</h3>
+                <p class="mb-auto">Available  at : </p>
+                <div class="mb-1 ">Jan 25</div>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="col-auto d-lg-block card-img">
+                <img src="./images/c3.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div> 
+          <!-- card-5  -->
+          <div class="col-md-6 col-lg-4 ">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static text-light bg-info">
+                <h3 class="mb-0">Wolf</h3>
+                <p class="mb-auto">Available  at : </p>
+                <div class="mb-1 ">Mar 15</div>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="col-auto d-lg-block card-img">
+                <img src="./images/c6.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div> 
+          <!-- card-6 -->
+          <div class="col-md-6 col-lg-4 ">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static text-light bg-info">
+                <h3 class="mb-0">Turtle</h3>
+                <p class="mb-auto">Available  at : </p>
+                <div class="mb-1 ">Oct 7</div>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="col-auto d-lg-block card-img">
+                <img src="./images/c4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>  
+          
+        </div> 
+      </div>
+    </section>
+    <!-- end about section  -->
+    <!-- service -->
+    <section class="service" id="service">
+      <div class="fixed-img img-fluid"></div>
+        <div class="container-xl my-4 ">
+          <div class="row justify-content-between gap-5 mx-3 ">
+            <!-- item-1 -->
+            <div class="card col-sm-12 col-md-5 col-xl-3 bg-info text-light" >
+              <img src="./images/a1.jpg" class="card-img-top shadow" alt="..." height="300px" style="aspect-ratio: 16/9;">
+              <div class="card-body">
+                <h5 class="card-title">Cats </h5>
+                <p class="card-text"> are small domesticated mammals of the Felis catus species.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+            <!-- item-2 -->
+            <div class="card col-sm-12 col-md-5 col-xl-3 bg-info text-light" >
+              <img src="./images/a2.jpg" class="card-img-top shadow" alt="..." height="300px" style="aspect-ratio: 16/9;">
+              <div class="card-body">
+                <h5 class="card-title">Parrot</h5>
+                <p class="card-text">birds with a strong curved beak, upright stance, and clawed feet</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+             <!-- item-3 -->
+             <div class="card col-sm-12 col-md-5 col-xl-3 bg-info text-light" >
+              <img src="./images/a3.jpg" class="card-img-top shadow" alt="..." height="300px" style="aspect-ratio: 16/9;">
+              <div class="card-body">
+                <h5 class="card-title">Elk calves</h5>
+                <p class="card-text">born with white spots to help them blend into their surroundings.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+            <!-- item-4 -->
+            <div class="card col-sm-12 col-md-5 col-xl-3 bg-info text-light" >
+              <img src="./images/a4.jpg" class="card-img-top shadow" alt="..." height="300px" style="aspect-ratio: 16/9;">
+              <div class="card-body">
+                <h5 class="card-title">Deer</h5>
+                <p class="card-text">is a hoofed ruminant mammal of the family Cervidae.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+            <!-- item-5 -->
+            <div class="card col-sm-12 col-md-5 col-xl-3 bg-info text-light" >
+              <img src="./images/a5.jpg" class="card-img-top shadow" alt="..." height="300px" style="aspect-ratio: 16/9;">
+              <div class="card-body">
+                <h5 class="card-title">Rabbit</h5>
+                <p class="card-text">are small mammals in the family Leporidae of the order Lagomorpha Oryctolagus cuniculus</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div> 
+            <!-- item-6 -->
+            <div class="card col-sm-12 col-md-5 col-xl-3 bg-info text-light" >
+              <img src="./images/a6.jpg" class="card-img-top shadow" alt="..." height="300px" style="aspect-ratio: 16/9;">
+              <div class="card-body">
+                <h5 class="card-title">Bee eater</h5>
+                <p class="card-text">birds in the family Meropidae, containing three genera and thirty species</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+             <!-- item-7 -->
+            <div class="card col-sm-12 col-md-5 col-xl-3 bg-info text-light" >
+              <img src="./images/a7.jpg" class="card-img-top shadow" alt="..." height="300px" style="aspect-ratio: 16/9;">
+              <div class="card-body">
+                <h5 class="card-title">Humming bird</h5>
+                <p class="card-text">re birds native to the Americas and comprise the biological family Trochilidae. </p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+            <!-- item-8 -->
+            <div class="card col-sm-12 col-md-5 col-xl-3 bg-info text-light" >
+              <img src="./images/a8.jpg" class="card-img-top shadow" alt="..." height="300px" style="aspect-ratio: 16/9;">
+              <div class="card-body">
+                <h5 class="card-title">Giraffe</h5>
+                <p class="card-text"> is a large African hoofed mammal belonging to the genus Giraffa.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div> 
+            <!-- item-9 -->
+            <div class="card col-sm-12 col-md-5 col-xl-3 bg-info text-light" >
+              <img src="./images/a9.jpg" class="card-img-top shadow" alt="..." height="300px" style="aspect-ratio: 16/9;">
+              <div class="card-body">
+                <h5 class="card-title">Tree Frog </h5>
+                <p class="card-text">frog that spends a major portion of its lifespan in trees, known as an arboreal state.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>             
+          </div>
+      </div>
+      <div class="fixed-img-2 img-fluid "></div>
+    </section>
+    <!-- end of service -->
+    <!-- team section -->
+    <section class="team mt-3" id="team">
+      <div class="container-lg bg-info rounded-pill my-2 py-2">
+        <h2 class="text-center text-light m-3 title glow">Thanks For</h2>
+      </div>
+      <div class="container-lg mt-5">     
+        <div class="row members">
+          <!-- card-1 -->
+          <div class="col-md-6 col-lg-4 mb-2">
+            <div class="card text-light thx-card shadow-lg card-img-1">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="upper-content text-start ">
+                <h3>All thanks and appreciation</h3>
+                <small><i class="far fa-clock"></i> October 15, 2020</small>
+                </div>
+                <div class="lower-content">
+                  <div class="img-box">
+                    <img src="./images/t1.jpg" alt="hello" class="mr-3 rounded-circle">
+                  </div>
+                  <div class="description">
+                    <h5 class="text-info fw-bold ms-2">ENG.Ahmed Reda</h5>
+                    <small class="ms-2">Front-end developer</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card -2 -->
+          <div class="col-md-6 col-lg-4 mb-2">
+            <div class="card text-light thx-card shadow-lg  card-img-2">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="upper-content text-start ">
+                <h3>All thanks and appreciation</h3>
+                <small><i class="far fa-clock"></i> October 15, 2020</small>
+                </div>
+                <div class="lower-content">
+                  <div class="img-box">
+                    <img src="./images/t2.jpg" alt="hello" class="mr-3 rounded-circle">
+                  </div>
+                  <div class="description">
+                    <h5 class="text-info fw-bold ms-2">ENG.Ahmed Reda</h5>
+                    <small class="ms-2">Front-end developer</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card-3 --> 
+          <div class="col-md-6 col-lg-4 mb-2">
+            <div class="card text-light thx-card shadow-lg card-img-3">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="upper-content text-start "> 
+                <h3>All thanks and appreciation</h3>
+                <small><i class="far fa-clock"></i> October 15, 2020</small>
+                </div>
+                <div class="lower-content">
+                  <div class="img-box">
+                    <img src="./images/t3.jpg" alt="hello" class="mr-3 rounded-circle">
+                  </div>
+                  <div class="description">
+                    <h5 class="text-info fw-bold ms-2">ENG.Ahmed Reda</h5>
+                    <small class="ms-2">Front-end developer</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!--end of team  -->
+     <!-- news section -->
+    <section class="news mt-4 mb-5" id="news">
+      <div class="container-lg bg-info rounded-pill my-2 py-2">
+        <h2 class="text-center text-light m-3 title glow title">OUR News</h2>
+      </div>
+      <div class="container-lg mt-4 ">
+        <!-- item-1 -->
+        <article class="news-card d-flex shadow-lg">
+          <div class="img-box incline-right">
+            <img src="./images/n1.jpg" alt="">
+          </div>
+          <div class="description p-3">
+            <h2 class="text-info fs-1 fw-bold " >Animals News</h2>
+            <div class="small text-light">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2020
+              </time>
+            </div>
+            <div class="line bg-info"></div>
+            <p class=" text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+              asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+              accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+              iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+            </p>
+            <ul class="text-light d-flex list-unstyled text-center">
+              <li class="list-item"> <i class="fas fa-tag mx-2 text-info"></i>animal</li>
+              <li class="list-item"> <i class="fas fa-clock mx-2 text-success"></i> 55 min</li>
+              <li class="list-item"> <i class="fas fa-play mx-2 text-danger "></i> watch video </li>
+            </ul>
+           </div>
+        </article>
+          <!-- item-2 -->
+        <article class="news-card d-flex shadow-lg mt-4">
+            <div class="img-box incline-left">
+              <img src="./images/n2.jpg" alt="">
+            </div>
+            <div class="description p-3">
+              <h2 class="text-info fs-1 fw-bold " >Animals News</h2>
+              <div class="small text-light">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2020
+                </time>
+              </div>
+              <div class="line bg-info"></div>
+              <p class=" text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+                asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+                iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+              </p>
+              <ul class="text-light d-flex list-unstyled text-center">
+                <li class="list-item"> <i class="fas fa-tag mx-2 text-info"></i>animal</li>
+                <li class="list-item"> <i class="fas fa-clock mx-2 text-success"></i> 55 min</li>
+                <li class="list-item"> <i class="fas fa-play mx-2 text-danger "></i> watch video </li>
+              </ul>
+             </div>
+        </article>
+            <!-- item-3 -->
+        <article class="news-card d-flex shadow-lg mt-4">
+              <div class="img-box incline-right">
+                <img src="./images/n3.jpg" alt="">
+              </div>
+              <div class="description p-3">
+                <h2 class="text-info fs-1 fw-bold " >Animals News</h2>
+                <div class="small text-light">
+                  <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2020
+                  </time>
+                </div>
+                <div class="line bg-info"></div>
+                <p class=" text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+                  asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                  accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+                  iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+                </p>
+                <ul class="text-light d-flex list-unstyled text-center">
+                  <li class="list-item"> <i class="fas fa-tag mx-2 text-info"></i>animal</li>
+                  <li class="list-item"> <i class="fas fa-clock mx-2 text-success"></i> 55 min</li>
+                  <li class="list-item"> <i class="fas fa-play mx-2 text-danger "></i> watch video </li>
+                </ul>
+               </div>
+        </article>
+            <!-- item-4 -->
+        <article class="news-card d-flex shadow-lg mt-4">
+              <div class="img-box incline-left">
+                <img src="./images/n4.jpg" alt="">
+              </div>
+              <div class="description p-3">
+                <h2 class="text-info fs-1 fw-bold " >Animals News</h2>
+                <div class="small text-light">
+                  <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2020
+                  </time>
+                </div>
+                <div class="line bg-info"></div>
+                <p class=" text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+                  asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                  accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+                  iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+                </p>
+                <ul class="text-light d-flex list-unstyled text-center">
+                  <li class="list-item"> <i class="fas fa-tag mx-2 text-info"></i>animal</li>
+                  <li class="list-item"> <i class="fas fa-clock mx-2 text-success"></i> 55 min</li>
+                  <li class="list-item"> <i class="fas fa-play mx-2 text-danger "></i> watch video </li>
+                </ul>
+               </div>
+        </article>    
+        </div>
+        
+
+    </section>
+    <!-- end of  news -->
+    <!-- footer section -->
+    <footer class=" text-light pb-2 bg-info footer" id="footer">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class=" border-top border-3 border-light my-3">
+            <h5>
+              <span class=" face mx-3 bg-secondary rounded "><a href="#c" class="p-3"><i class="fa-brands fa-facebook-f" title="facebook"></i></a></span>
+              <span class="twitter mx-3 bg-secondary rounded "><a href="#c" class="p-3"><i class="fa-brands fa-twitter" title="twitter"></i></a></span>
+            </h5>
+            <hr class="border-top border-3 border-light my-3">
+            <address>
+              <p>Tel : 000-000-000</p>
+              <p>Address : EGYPT</p>
+              <p>Fax : 000-000-000</p>
+            </address>
+          </div>
+          <div class="col-md-4 mid">
+            <hr class="border-top border-3 border-light my-3">
+            <h5>
+              <span class="youtube mx-3 bg-secondary rounded "><a href="#c" class="p-3"><i class="fa-brands fa-youtube" title="youtube"></i></a></span>
+              <span class="linkedin mx-3 bg-secondary rounded "><a href="#c" class="p-3"><i class="fa-brands fa-linkedin-in" title="linkedin"></i></a></span>
+            </h5>
+            <hr class="border-top border-3 border-light my-3">
+            <p><a href="#">Visit Us</a></p>
+            <p><a href="#">Take alook</a></p>
+            <p><a href="#">Your health is more important</a></p>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <h5>
+              <span class="instagram mx-3 bg-secondary rounded "><a href="#c" class="p-3"><i class="fa-brands fa-instagram" title="instagram"></i></a></span>
+              <span class="google mx-3 bg-secondary rounded "><a href="#c" class="p-3"><i class="fa-brands fa-google-plus-g" title="google-plus"></i></a></span>
+            </h5>
+            <hr class="border-top border-3 border-light my-3">
+            <p>Serveices for all </p>
+            <p>Provide best serveices</p>
+            <p>you will be better than before</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-top border-3 border-light my-3">
+      <span class="text-center d-block title container px-5">Copyright © 2023 Ahmed Reda Salama , Animalhub. All rights</span>
+      <hr class="border-top border-3 border-light ">
+      <!-- /footer -->
+              
+    </footer>
+    <!-- end of footer section -->
+  <!-- script  -->
+    <script src="./JS/all.min.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
